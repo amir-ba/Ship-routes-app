@@ -1,0 +1,24 @@
+<mat-form-field>
+  <mat-label>Routes</mat-label>
+  <mat-select
+    (selectionChange)="onRouteChange($event.value)"
+    [formControl]="routeSelector"
+    single
+  >
+    <mat-option *ngFor="let route of shipRoutes | async" [value]="route.routeId"
+      >{{ route.routeOrigin }} - {{ route.routeTarget }}</mat-option
+    >
+  </mat-select>
+</mat-form-field>
+<ng-container *ngIf="selectedRoute | async as route">
+  <mat-list role="list">
+    <mat-list-item role="listitem">
+      <span class="material-icons">home</span>
+      {{ route.routeOrigin }}
+    </mat-list-item>
+    <mat-list-item role="listitem">
+      <span class="material-icons">location_on</span>
+      {{ route.routeTarget }}
+    </mat-list-item>
+  </mat-list></ng-container
+>

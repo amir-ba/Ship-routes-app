@@ -1,0 +1,4 @@
+.content-card{
+  width: clamp(35vw,40vw,55vw);
+  top: 80px;
+}

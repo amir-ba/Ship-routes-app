@@ -1,0 +1,12 @@
+<app-map [viewOptions]="mapViewOptions"></app-map>
+<mat-card class="content-card">
+  <mat-card-header
+    ><mat-card-title>Ship Routes Visualizer</mat-card-title>
+    <mat-card-subtitle
+      >Select a route to visualize on the map!</mat-card-subtitle
+    >
+  </mat-card-header>
+  <app-route-picker></app-route-picker>
+  <app-graph></app-graph>
+</mat-card>
+<router-outlet></router-outlet>

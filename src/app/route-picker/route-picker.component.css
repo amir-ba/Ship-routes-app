@@ -1,0 +1,6 @@
+mat-form-field {
+  width: 80%;
+  }
+::ng-deep mat-list-item {
+  height: 30px  !important;
+}

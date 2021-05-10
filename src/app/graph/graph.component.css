@@ -1,0 +1,13 @@
+.spinner-container{
+position: absolute;
+}
+.element-contaier {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.demo-chart{
+  height: 220px;
+  width: 100%;
+}

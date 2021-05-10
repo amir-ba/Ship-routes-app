@@ -1,0 +1,8 @@
+<ng-container *ngIf="options | async as optionList">
+    <div class="element-contaier">
+      <mat-spinner class="spinner-container" *ngIf="!echartsInstance"></mat-spinner>
+      <div  #chart echarts [options]="optionList"
+         (chartInit)="onChartInit($event)"
+          class="demo-chart"></div>
+    </div>
+</ng-container>
